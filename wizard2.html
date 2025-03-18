@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Wizardd</title>
+	<link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+
+
+
+	<h1 style="color: #e5cbcb;">Hey,<br>Embrace your darkness, for without it, your light would not shine as bright. <br> May you always find peace in both your light and your shadows, <br>for they are both a part of the beautiful soul you share with the world. <br> From Mava</h1> <a href="https://youtu.be/k37QvhAyA2Y" style="color: red; font-size: 20px;">OPEN ME</a>
+	
+
+
+
+
+
+<div class="container">
+      <div class="stars"></div>
+      <div class="planet">
+        <div class="shadow"></div>
+      </div>
+      <div class="astronaut">
+        <div class="tank center"></div>
+        <div class="suit center">
+          <div class="helmet center"></div>
+          <div class="buttons center"></div>
+          <div class="hand-l"></div>
+          <div class="hand-r"></div>
+          <div class="leg-l"></div>
+          <div class="leg-r"></div>
+          <div class="pipe"></div>
+        </div>
+      </div>
+    </div>
+
+    <style type="text/css">
+
+    	body {
+  padding: 0;
+  margin: 0;
+  background-color: #171640;
+}
+h1{
+	position: absolute;
+	margin-top: 20px;
+	margin-left: 20px;
+}
+    	.container {
+  position: absolute;
+  height: 31.25em;
+  width: 31.25em;
+  background-color: rgba(255, 255, 255, 0.05);
+  transform: translate(-50%, -50%);
+  top: 35%;
+  left: 83%;
+  border-radius: 50%;
+}
+.center {
+  transform: translateX(-50%);
+  left: 50%;
+}
+.planet {
+  height: 12.5em;
+  width: 12.5em;
+  background-color: #f5d201;
+  border-radius: 50%;
+  position: absolute;
+  top: 2.81em;
+  left: 13.75em;
+}
+.planet:before {
+  position: absolute;
+  content: "";
+  background-color: #fcec8e;
+  height: 1.25em;
+  width: 6.87em;
+  border-radius: 0.62em;
+  top: 3em;
+  left: 4.25em;
+  box-shadow: 1.42em 3.65em 0 -0.25em #fcec8e, -1.25em 4.75em 0 0.12em #fcec8e;
+}
+.planet:after {
+  position: absolute;
+  content: "";
+  background-color: #edb514;
+  height: 0.75em;
+  width: 2.5em;
+  border-radius: 0.46em;
+  top: 1.87em;
+  left: 3em;
+  box-shadow: -1.25em 3.75em 0 0.37em #edb514, 4.06em 8.43em 0 0.12em #edb514;
+}
+.shadow {
+  position: absolute;
+  background-color: transparent;
+  box-shadow: 0.93em 0.93em rgba(134, 123, 5, 0.3);
+  height: 12.5em;
+  width: 12.5em;
+  border-radius: 50%;
+  bottom: 0.93em;
+  right: 0.93em;
+}
+.astronaut {
+  position: absolute;
+  height: 17.5em;
+  width: 15.62em;
+  top: 7.5em;
+  left: 6.25em;
+  transform: rotate(-30deg);
+  animation: float 5s infinite;
+}
+@keyframes float {
+  50% {
+    transform: rotate(-30deg) translateY(1.87em);
+  }
+}
+.suit {
+  position: absolute;
+  background-color: #e2e9f4;
+  height: 6.25em;
+  width: 6.25em;
+  border-radius: 10%;
+  top: 5.5em;
+}
+.helmet {
+  background-color: #e2e9f4;
+  height: 5.81em;
+  width: 6.25em;
+  position: absolute;
+  top: -5.43em;
+  border-radius: 45%;
+}
+.helmet:before {
+  position: absolute;
+  content: "";
+  background-color: #64c1f7;
+  height: 3.75em;
+  width: 5em;
+  border-radius: 60% 60% 40% 40%;
+  left: 0.62em;
+  top: 0.43em;
+}
+.helmet:after {
+  content: "";
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.3);
+  height: 0.93em;
+  width: 0.93em;
+  border-radius: 50%;
+  left: 1.25em;
+  top: 1.56em;
+}
+.tank {
+  position: absolute;
+  background-color: #aec3d2;
+  height: 7.5em;
+  width: 7.5em;
+  top: 5em;
+  border-radius: 0.62em;
+}
+.buttons {
+  background-color: #bdd3f3;
+  width: 3.43em;
+  height: 1.87em;
+  border-radius: 0.5em;
+  position: absolute;
+  top: 1.56em;
+}
+.buttons:after {
+  position: absolute;
+  content: "";
+  height: 0.75em;
+  width: 0.75em;
+  background-color: #1683ed;
+  border-radius: 50%;
+  top: 0.62em;
+  left: 0.25em;
+  box-shadow: 1.12em 0 #fbd31f, 2.25em 0 #e62c1b;
+}
+.buttons:before {
+  position: absolute;
+  content: "";
+  height: 1.25em;
+  width: 1.25em;
+  border-radius: 50%;
+  background-color: #aec3d2;
+  top: 2.5em;
+  left: 1.12em;
+}
+.hand-l,
+.hand-r {
+  position: absolute;
+  height: 1.62em;
+  width: 4.68em;
+  background-color: #e2e9f4;
+  border-radius: 2.5em;
+  top: -0.62em;
+}
+.hand-l {
+  transform: rotate(20deg);
+  left: -3.12em;
+}
+.hand-r {
+  transform: rotate(-20deg);
+  right: -3.12em;
+}
+.hand-l:before,
+.hand-r:before {
+  position: absolute;
+  content: "";
+  height: 1.62em;
+  width: 4.81em;
+  background-color: #e2e9f4;
+  border-radius: 1.62em;
+  bottom: 1.62em;
+}
+.hand-l:before {
+  right: 1.87em;
+  transform: rotate(-90deg);
+}
+.hand-r:before {
+  left: 1.87em;
+  transform: rotate(90deg);
+}
+.hand-l:after,
+.hand-r:after {
+  position: absolute;
+  content: "";
+  background-color: #e62c1b;
+  height: 0.34em;
+  width: 1.75em;
+  border-radius: 0.81em;
+  top: -1.56em;
+}
+.hand-l:after {
+  left: -0.43em;
+}
+.hand-r:after {
+  right: -0.43em;
+}
+.leg-l,
+.leg-r {
+  height: 6.25em;
+  width: 2.5em;
+  background-color: #e2e9f4;
+  position: absolute;
+  top: 5em;
+}
+.leg-l {
+  left: -0.75em;
+  transform: rotate(20deg);
+}
+.leg-r {
+  right: -0.75em;
+  transform: rotate(-20deg);
+}
+.leg-l:before,
+.leg-r:before {
+  position: absolute;
+  content: "";
+  background-color: #ffffff;
+  width: 2.68em;
+  height: 2.18em;
+  border-radius: 50% 50% 0 0;
+  top: 4.06em;
+  left: -0.09em;
+}
+.leg-l:after,
+.leg-r:after {
+  position: absolute;
+  content: "";
+  background-color: #e62c1b;
+  width: 2.81em;
+  height: 0.31em;
+  border-radius: 1em;
+  bottom: -0.09em;
+  left: -0.15em;
+}
+.pipe {
+  position: absolute;
+  background-color: transparent;
+  height: 2.5em;
+  width: 6.25em;
+  border: 0.62em solid #3cb9f0;
+  border-top: none;
+  border-radius: 0 0 3.75em 1.87em;
+  left: 2.81em;
+  top: 4.5em;
+}
+.pipe:before {
+  position: absolute;
+  content: "";
+  background-color: transparent;
+  height: 2.5em;
+  width: 2.81em;
+  border: 0.62em solid #3cb9f0;
+  border-left: none;
+  border-bottom: none;
+  top: -3.1em;
+  left: 3.42em;
+  border-radius: 0 2.5em 0 0;
+}
+.stars {
+  position: absolute;
+  background-color: #ffffff;
+  width: 0.31em;
+  height: 0.31em;
+  border-radius: 50%;
+  top: 9.37em;
+  left: 3.75em;
+  box-shadow: 4.37em 9.37em #ffffff, 5.62em -6.25em #ffffff,
+    17.5em 15.62em #ffffff, 23.75em 7.5em #ffffff, 3.75em 16.25em #ffffff;
+  animation: twinkle 3s infinite;
+}
+@keyframes twinkle {
+  50% {
+    opacity: 0.2;
+  }
+}
+@media screen and (min-width: 700px) {
+  .container {
+    font-size: 20px;
+  }
+}
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="containerx">
+      <p class="letter letter-M">M</p>
+      <div class="moon">
+        <div class="orbit">
+          <p>O</p>
+        </div>
+      </div>
+      <p class="letter letter-N">N</p>
+    </div>
+
+    <style type="text/css">
+    	}
+.containerx {
+  height: 31.25em;
+  width: 31.25em;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  color: #ffffff;
+}
+p.letter {
+  font-size: 3.5em;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%;
+  color: whitesmoke;
+}
+.letter-M {
+  left: 700px;
+  color: whitesmoke;
+
+}
+.letter-N {
+  right: 700px;
+  color: whitesmoke;
+}
+.moon {
+  background-color: #f5f5f5;
+  height: 8em;
+  width: 8em;
+  border-radius: 50%;
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  box-shadow: 0 0 0 0.6em rgba(255, 255, 255, 0.05),
+    0 0 0 1.2em rgba(255, 255, 255, 0.05), 0 0 0 1.8em rgba(255, 255, 255, 0.05);
+}
+.moon:after {
+  position: absolute;
+  content: "";
+  background-color: #e6e6e6;
+  height: 0.9em;
+  width: 0.9em;
+  border-radius: 50%;
+  top: 3.75em;
+  left: 1.25em;
+  box-shadow: 0.9em -2.1em 0 0.2em #e6e6e6, 1.5em -0.3em 0 -0.06em #e6e6e6;
+}
+.orbit {
+  height: 18.75em;
+  width: 18.75em;
+  border-radius: 50%;
+  position: absolute;
+  left: -5.2em;
+  bottom: -5.2em;
+  animation: spin 8s infinite linear;
+}
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.orbit p {
+  position: absolute;
+  font-size: 3.5em;
+  top: 0.25em;
+  left: 0.25em;
+   color: ghostwhite;
+}
+@media screen and (min-width: 700px) {
+  .container {
+    font-size: 20px;
+  }
+}
+    </style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="containerxx">
+      <div class="glowx"></div>
+      <div class="starsx"></div>
+      <div class="spinnerx">
+        <div class="sunx">
+          <div class="ray1x"></div>
+          <div class="ray2x"></div>
+          <div class="ray3x"></div>
+          <div class="ray4x"></div>
+        </div>
+        <div class="moonx"></div>
+      </div>
+    </div>
+
+    <style type="text/css">
+    	
+.containerxx {
+  height: 25em;
+  width: 16.8em;
+  background: linear-gradient(#3f006c, #750050, #b10042, #da4837, #f7bb38);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 12%;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 16.8em;
+  animation: colors 12s infinite forwards;
+}
+@keyframes colors {
+  10% {
+    background: linear-gradient(#3f006c, #750050, #b10042, #da4837, #f7bb38);
+  }
+  53% {
+    background: linear-gradient(#14045f, #331a99, #282bce, #1555ec, #1e84f7);
+  }
+  55% {
+    background: linear-gradient(#14045f, #331a99, #282bce, #1555ec, #1e84f7);
+  }
+  98% {
+    background: linear-gradient(#3f006c, #750050, #b10042, #da4837, #f7bb38);
+  }
+  100% {
+    background: linear-gradient(#3f006c, #750050, #b10042, #da4837, #f7bb38);
+  }
+}
+.spinnerx {
+  height: 28.12em;
+  width: 28.12em;
+  border-radius: 50%;
+  position: absolute;
+  top: 8.75em;
+  left: -5.62em;
+  animation: spin 12s infinite forwards;
+}
+@keyframes spin {
+  10% {
+    transform: rotate(0deg);
+  }
+  45% {
+    transform: rotate(180deg);
+  }
+  55% {
+    transform: rotate(180deg);
+  }
+  90% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.sunx {
+  background-color: #f7f7de;
+  height: 3.75em;
+  width: 3.75em;
+  border-radius: 50%;
+  position: absolute;
+  left: 12.18em;
+  top: -1.87em;
+}
+.sunx:before,
+.sunx:after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.sunx:before {
+  height: 7.5em;
+  width: 7.5em;
+  right: -1.87em;
+  bottom: -1.87em;
+}
+.sunx:after {
+  height: 12.5em;
+  width: 12.5em;
+  right: -4.37em;
+  bottom: -4.37em;
+}
+.ray1x {
+  height: 0;
+  width: 0.6em;
+  border-bottom: 10.6em solid rgba(255, 255, 255, 0.1);
+  border-left: 1.8em solid transparent;
+  border-right: 1.8em solid transparent;
+  position: absolute;
+  transform: rotate(130deg);
+  bottom: 0.6em;
+  right: 4em;
+}
+.ray2x {
+  position: absolute;
+  height: 0;
+  width: 0.9em;
+  border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
+  border-left: 2.1em solid transparent;
+  border-right: 2.1em solid transparent;
+  transform: rotate(230deg);
+  left: 3.75em;
+  bottom: -0.3em;
+}
+.ray3x {
+  position: absolute;
+  height: 0;
+  width: 0.3em;
+  border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
+  border-left: 0.9em solid transparent;
+  border-right: 0.9em solid transparent;
+  transform: rotate(80deg);
+  left: -5.3em;
+  bottom: -5.6em;
+}
+.ray4x {
+  position: absolute;
+  height: 0;
+  width: 0.1em;
+  border-bottom: 12.5em solid rgba(255, 255, 255, 0.1);
+  border-left: 0.5em solid transparent;
+  border-right: 0.5em solid transparent;
+  transform: rotate(280deg);
+  left: 7.5em;
+  bottom: -5.6em;
+}
+.moonx {
+  height: 3.75em;
+  width: 3.75em;
+  box-shadow: 1.25em -1.25em 0 0 #f7f7de;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3.1em;
+  left: 10.93em;
+}
+.moonx:before,
+.moonx:after {
+  position: absolute;
+  content: "";
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+}
+.moonx:before {
+  height: 6.25em;
+  width: 6.25em;
+  right: -2.5em;
+  bottom: 0;
+}
+.moonx:after {
+  height: 11.8em;
+  width: 11.8em;
+  left: -2.8em;
+  bottom: -2.8em;
+}
+.starsx {
+  height: 0.15em;
+  width: 0.15em;
+  background-color: #ffffff;
+  position: absolute;
+  top: 3.7em;
+  left: 9.3em;
+  border-radius: 50%;
+  box-shadow: 3em 9.3em #ffffff, -1.8em 11.2em #ffffff, 2.5em 16.2em #ffffff,
+    -5em 6.2em #ffffff, -5.6em -0.6em #ffffff, -5.6em 3.7em 0 0.06em #ffffff,
+    -5em 17.5em 0 0.05em #ffffff, -7.5em 14.3em #ffffff;
+  animation: twinkle 12s infinite forwards;
+}
+@keyframes twinkle {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 0;
+  }
+  53% {
+    opacity: 0.7;
+  }
+  55% {
+    opacity: 0.7;
+  }
+  98% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.glowx {
+  height: 21.8em;
+  width: 21.8em;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 50%;
+  bottom: -19em;
+  animation: float 5s infinite;
+}
+@keyframes float {
+  50% {
+    transform: translateY(0.75em);
+  }
+}
+.glowx:before,
+.glowx:after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: inherit;
+  border-radius: 50%;
+}
+.glowx:before {
+  left: -9.3em;
+  top: -3.1em;
+}
+.glowx:after {
+  right: -5.6em;
+  top: -0.8em;
+}
+@media screen and (min-width: 600px) {
+  .containerxx {
+    font-size: 20px;
+  }
+}
+    </style>
+
+
+
+</body>
+</html>
